@@ -1,0 +1,685 @@
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+
+@article{Adcroft2013,
+	author = { Andy   Adcroft  and  David   Taylor },
+	title = {Support for new career academics: an integrated model for research intensive university business and management schools},
+	journal = {Studies in Higher Education},
+	volume = {38},
+	number = {6},
+	pages = {827-840},
+	year  = {2013},
+	publisher = {Routledge},
+	doi = {10.1080/03075079.2011.599378},
+	
+	URL = { 
+	https://doi.org/10.1080/03075079.2011.599378
+	
+	},
+	eprint = { 
+	https://doi.org/10.1080/03075079.2011.599378
+	
+	}
+	
+}
+
+@misc{AdvancedHENTF, title={National Teaching Fellowships}, year={2020}, author={Advanced-HE}, URL={https://www.advance-he.ac.uk/awards/teaching-excellence-awards/national-teaching-fellowship}}
+
+@misc{ACMUKICER, title={United Kingdom and Ireland Computing Education Research (UKICER}, year={2020}, author={AUK ACM Special Interest Group in Computing Science Education}, URL={https://www.ukicer.com/}}
+
+@article{Arthur2016,
+	author = {Linet Arthur},
+	title = {Communities of practice in higher education: professional learning in an academic career},
+	journal = {International Journal for Academic Development},
+	volume = {21},
+	number = {3},
+	pages = {230-241},
+	year  = {2016},
+	publisher = {Routledge},
+	doi = {10.1080/1360144X.2015.1127813},
+	
+	URL = { 
+	https://doi.org/10.1080/1360144X.2015.1127813
+	
+	},
+	eprint = { 
+	https://doi.org/10.1080/1360144X.2015.1127813
+	
+	}
+	
+}
+
+@article{Ambler2016,
+	author = { Ambler, T. and M. Harvey  and Cahir, J.},
+	title = {University academics’ experiences of learning through mentoring.},
+	journal = {Aust. Educ. Res. },
+	volume = {43},
+	number = {2016},
+	pages = {609–627},
+	year  = {2016},
+	
+	doi = {https://doi.org/10.1007/s13384-016-0214-7},
+	
+	
+	
+}
+@article{arday20,
+	author = {Jason Arday},
+	title = {Fighting the tide: Understanding the difficulties facing Black, Asian and Minority Ethnic (BAME) Doctoral Students’ pursuing a career in Academia},
+	journal = {Educational Philosophy and Theory},
+	volume = {0},
+	number = {0},
+	pages = {1-8},
+	year  = {2020},
+	publisher = {Routledge},
+	doi = {10.1080/00131857.2020.1777640},
+	
+	URL = { 
+	https://doi.org/10.1080/00131857.2020.1777640
+	
+	}
+	
+}
+
+
+
+
+
+
+@article{Barkham2005,
+	author = { Jo   Barkham },
+	title = {Reflections and interpretations on life in academia: a mentee speaks},
+	journal = {Mentoring \& Tutoring: Partnership in Learning},
+	volume = {13},
+	number = {3},
+	pages = {331-344},
+	year  = {2005},
+	publisher = {Routledge},
+	doi = {10.1080/13611260500177468},
+	
+	URL = { 
+	https://doi.org/10.1080/13611260500177468
+	
+	}
+	
+	
+}
+
+@misc{BCSAcademy, title={BCS Academy of Computing}, year={2020}, author={BCS, The Chartered Institute for IT}, URL={https://www.bcs.org/more/bcs-academy-of-computing/}}
+
+@article{Bolander2008,
+	author = { Klara   Bolander   Laksov  and  Sarah   Mann  and  Lars   Owe   Dahlgren },
+	title = {Developing a community of practice around teaching: a case study},
+	journal = {Higher Education Research \& Development},
+	volume = {27},
+	number = {2},
+	pages = {121-132},
+	year  = {2008},
+	publisher = {Routledge},
+	doi = {10.1080/07294360701805259}
+}
+
+@article{bhopal2014experiences,
+	title={The experiences of BME academics in higher education: aspirations in the face of inequality},
+	author={Bhopal, Kalwant},
+	journal={Leadership Foundation for Higher Education Stimulus Papers},
+	year={2014}
+}
+
+@article{Bhopal19,
+	author = {Kalwant Bhopal and Holly Henderson},
+	title = {Competing inequalities: gender versus race in higher education institutions in the UK},
+	journal = {Educational Review},
+	volume = {0},
+	number = {0},
+	pages = {1-17},
+	year  = {2019},
+	publisher = {Routledge},
+	doi = {10.1080/00131911.2019.1642305},
+	
+	URL = { 
+	https://doi.org/10.1080/00131911.2019.1642305
+	
+	}
+	
+	
+}
+
+
+
+@inproceedings{10.1145/3219617.3219676,
+	author = {Golubchik, Leana and Redel, Mallory},
+	title = {Diversity in Faculty Recruiting: A WiSE Approach},
+	year = {2018},
+	isbn = {9781450358460},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3219617.3219676},
+	doi = {10.1145/3219617.3219676},
+	abstract = {In this article, we share approaches and practices that we have found to be successful in supporting women in STEM fields, based on our experience with the University of Southern California's (USC) Women in Science and Engineering Program (WiSE). Specifically, we focus on faculty recruitment and retention, as faculty makeup and their success affects the entire pipeline, including graduate and undergraduate students.},
+	booktitle = {Abstracts of the 2018 ACM International Conference on Measurement and Modeling of Computer Systems},
+	pages = {140–142},
+	numpages = {3},
+	keywords = {diversity, faculty recruitment, women in stem},
+	location = {Irvine, CA, USA},
+	series = {SIGMETRICS '18}
+}
+
+
+@article{Golubchik2018,
+	author = {Golubchik, Leana and Redel, Mallory},
+	title = {Diversity in Faculty Recruiting: A WiSE Approach},
+	year = {2018},
+	issue_date = {June 2018},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {46},
+	number = {1},
+	issn = {0163-5999},
+	url = {https://doi.org/10.1145/3292040.3219676},
+	doi = {10.1145/3292040.3219676},
+	journal = {SIGMETRICS Perform. Eval. Rev.},
+	month = jun,
+	pages = {140–142},
+	numpages = {3},
+	keywords = {diversity, faculty recruitment, women in stem}
+}
+
+
+
+@Misc{shadbolt2016shadbolt,
+	title={Review of computer sciences degree accreditation and graduate employability},
+	author={Shadbolt, Nigel},
+	year={2016},
+	howpublished={\url{https://www.gov.uk/government/publications/computer-science-degree-accreditation-and-graduate-employability-shadbolt-review}},
+}
+
+@inproceedings{Sinclair2015,
+	author = {Sinclair, Jane and Butler, Matthew and Morgan, Michael and Kalvala, Sara},
+	title = {Measures of Student Engagement in Computer Science},
+	year = {2015},
+	url = {https://doi.org/10.1145/2729094.2742586},
+	doi = {10.1145/2729094.2742586},
+	booktitle = {Proc.~2015 ACM Conference on Innovation and Technology in Computer Science Education},
+	pages = {242--247}
+}
+
+@misc{CEP, title={ACM CEP: Computing Education Practice}, year={2020}, author={ACM CEP}, url={https://dl.acm.org/conference/cep}}
+
+@article{christie2014peer,
+	title={Peer mentoring in higher education: Issues of power and control.},
+	author={Christie, Hazel},
+	journal={Teaching in Higher Education},
+	volume={19},
+	number={8},
+	pages={955--965},
+	year={2014},
+	publisher={ERIC},
+	url={https://doi.org/10.1080/13562517.2014.934355},
+	doi={10.1080/13562517.2014.934355}
+}
+
+@InProceedings{davenport-et-al:latice2016,
+	author =       {James H. Davenport and Alan Hayes and Rachid Hourizi and Tom Crick},
+	title =        {{Innovative Pedagogical Practices in the Craft of Computing}},
+	booktitle =    {{Proc.~4th International Conference on Learning and Teaching in Computing and Engineering (LaTiCE 2016)}},
+	year = 	 {2016},
+	doi={https://doi.org/10.1109/LaTiCE.2016.38},
+	pages={115--119}
+}
+
+@article{deJanasz,
+	title={Mentor networks and career success: Lessons for turbulent times},
+	author={{De Janasz}, Suzanne C. and Sullivan, Sherry E. and Whiting, Vicki},
+	journal={Academy of Management Perspectives},
+	volume={17},
+	number={4},
+	pages={78--91},
+	year={2003},
+	publisher={Academy of Management Briarcliff Manor, NY 10510}
+}
+
+@misc{Napier, title={Centre for Computing Education Research}, year={2020}, author={Edinburgh Napier University}, URL={https://www.napier.ac.uk/research-and-innovation/research-search/centres/centre-for-computing-education-research}}
+
+
+
+
+@article{Foote2009,
+	author = { Kenneth E.   Foote  and  Michael N.   Solem },
+	title = {Toward better mentoring for early career faculty: results of a study of US geographers},
+	journal = {International Journal for Academic Development},
+	volume = {14},
+	number = {1},
+	pages = {47-58},
+	year  = {2009},
+	publisher = {Routledge},
+	doi = {10.1080/13601440802659403}
+}
+
+@article{gibson2006mentoring,
+	title={Mentoring of women faculty: The role of organizational politics and culture},
+	author={Gibson, Sharon K},
+	journal={Innovative Higher Education},
+	volume={31},
+	number={1},
+	pages={63--79},
+	year={2006},
+	publisher={Springer}
+}
+
+@misc{HEATraining, title={Training Events for HE Professionals}, year={2020}, author={Higher Educatuon Academy}, URL={https://www.heacademy.ac.uk/training-events}}
+
+
+@misc{IEEEES, title={IEEE Education Society}, year={2020}, author={IEEE Education Society}, URL={https://ieee-edusociety.org/}}
+
+@misc{IMA, title={Induction Course for New Lecturers in the Mathematical Sciences 2019}, year={2019}, author={Institute of Mathematics and its Applications}, URL={https://ima.org.uk/11361/induction-course-for-new-lecturers-in-the-mathematical-sciences-2019/}}
+
+@misc{IOC, title={Institute of Coding}, year={2020}, author={Institute of Coding}, URL={https://instituteofcoding.org/}}
+
+
+
+
+@article{Ismail2007,
+	author = { Maimunah   Ismail  and  Roziah   Mohd   Rasdi },
+	title = {Impact of networking on career development: Experience of high-flying women academics in Malaysia},
+	journal = {Human Resource Development International},
+	volume = {10},
+	number = {2},
+	pages = {153-168},
+	year  = {2007},
+	publisher = {Routledge},
+	doi = {10.1080/13678860701347131},
+	
+	URL = { 
+	https://doi.org/10.1080/13678860701347131
+	
+	},
+	eprint = { 
+	https://doi.org/10.1080/13678860701347131
+	
+	}
+	
+}
+
+@article{King2004,
+	author = {Helen King},
+	title = {Continuing Professional Development in Higher Education: what do academics do?},
+	journal = {Planet},
+	volume = {13},
+	number = {1},
+	pages = {26-29},
+	year  = {2004},
+	publisher = {Routledge},
+	doi = {10.11120/plan.2004.00130026},
+	
+	URL = { 
+	https://doi.org/10.11120/plan.2004.00130026
+	
+	},
+	
+}
+
+@Article{murphy-et-al:programming2017,
+	author = 	 {Ellen Murphy and Tom Crick and James H. Davenport},
+	title = 	 {{An Analysis of Introductory Programming Courses at UK Universities}},
+	journal = 	 {{The Art, Science, and Engineering of Programming}},
+	year = 	 {2017},
+	volume = 	 {1(2)},
+	number = 	 {18},
+	numpages={23},
+	doi={https://doi.org/10.22152/programming-journal.org/2017/1/18}
+}
+
+
+@article{Mathieson2011,
+	author = { Susan   Mathieson },
+	title = {Developing academic agency through critical reflection: a sociocultural approach to academic induction programmes},
+	journal = {International Journal for Academic Development},
+	volume = {16},
+	number = {3},
+	pages = {243-256},
+	year  = {2011},
+	publisher = {Routledge},
+	doi = {10.1080/1360144X.2011.596730},
+	
+	URL = { 
+	https://doi.org/10.1080/1360144X.2011.596730
+	
+	},
+	eprint = { 
+	https://doi.org/10.1080/1360144X.2011.596730
+	
+	}
+	
+}
+
+@article{Patton2015,
+	author = {Lori D. Patton and Stephanie Bondi},
+	title = {Nice white men or social justice allies?: using critical race theory to examine how white male faculty and administrators engage in ally work},
+	journal = {Race Ethnicity and Education},
+	volume = {18},
+	number = {4},
+	pages = {488-514},
+	year  = {2015},
+	publisher = {Routledge},
+	doi = {10.1080/13613324.2014.1000289},
+	
+	URL = { 
+	https://doi.org/10.1080/13613324.2014.1000289
+	
+	}
+	
+	
+}
+
+@misc{PI_SYM, title={Cambridge Computing Education Research Symposium}, year={2020}, author={Raspberry PI Foundation}, URL={https://www.raspberrypi.org/cambridge-computing-education-research-symposium/}}
+
+@misc{PI_Sem, title={Computing education research seminars}, year={2020}, author={Raspberry PI Foundation}, URL={https://www.raspberrypi.org/computing-education-research-online-seminars/}}
+
+@article{reddick2016don,
+	title={" I Don't Want to Work in a World of Whiteness:" White Faculty and Their Mentoring Relationships with Black Students.},
+	author={Reddick, Richard J. and Pritchett, Katie Ortego},
+	journal={Journal of the Professoriate},
+	volume={8},
+	number={1},
+	year={2016}
+}
+
+@inproceedings{simon-et-al:sigcse2018,
+	author = {Simon and Mason, Raina and Crick, Tom and Davenport, James H. and Murphy, Ellen},
+	title = {Language Choice in Introductory Programming Courses at Australasian and UK Universities},
+	year = {2018},
+	doi = {10.1145/3159450.3159547},
+	booktitle = {Proc.~49th ACM Technical Symposium on Computer Science Education},
+	pages = {852--857}
+}
+
+@inproceedings{St-cyr2018,
+	author = {St-Cyr, Olivier and MacDonald, Craig M. and Churchill, Elizabeth F. and Preece, Jenny J. and Bowser, Anna},
+	title = {Developing a Community of Practice to Support Global HCI Education},
+	year = {2018},
+	isbn = {9781450356213},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3170427.3170616},
+	doi = {10.1145/3170427.3170616},
+	booktitle = {Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems},
+	pages = {1–7},
+	numpages = {7},
+	keywords = {information architecture, hci curriculum, education, community of practice},
+	location = {Montreal QC, Canada},
+	series = {CHI EA ’18}
+}
+
+@misc{SIGCSE, title={ACM SIGCSE}, year={2020}, author={ACM SIGCSE}, URL={https://sigcse.org/sigcse/}}
+
+@article{Thomas2015,
+	author = {J. Denard Thomas and Laura Gail Lunsford and Helena A. Rodrigues},
+	title = {Early career academic staff support: evaluating mentoring networks},
+	journal = {Journal of Higher Education Policy and Management},
+	volume = {37},
+	number = {3},
+	pages = {320-329},
+	year  = {2015},
+	publisher = {Routledge},
+	doi = {10.1080/1360080X.2015.1034426}
+}
+
+@misc{UKI-SIGCSE, title={ACM UKI SIGCSE}, year={2020}, author={ACM SIGCSE}, URL={https://uki-sigcse.acm.org/}}
+
+@misc{UKICER, title={ACM UKICER: UK and Ireland Computer Science Education Research Conference}, year={2020}, author={ACM SIGCSE}, URL={https://dl.acm.org/conference/ukicer}}
+
+@misc{UniversitiesUK19, title={Black, Asian and Minority Ethnic Student Attainment at UK Universities}, year={2019}, author={{Universities UK}}, URL={https://www.universitiesuk.ac.uk/policy-and-analysis/reports/Documents/2019/bame-student-attainment-uk-universities-closing-the-gap.pdf}}
+
+
+
+@inproceedings{Watson2014,
+	author = {Watson, Christopher and Li, Frederick W.B.},
+	title = {Failure Rates in Introductory Programming Revisited},
+	year = {2014},
+	doi = {10.1145/2591708.2591749},
+	booktitle = {Proc.~2014 Conference on Innovation & Technology in Computer Science Education},
+	pages = {39--44}
+}
+
+@inproceedings{Watson:2014:FRI:2591708.2591749,
+	author = {Christopher Watson and Frederick W. B. Li },
+	title = {Failure Rates in Introductory Programming Revisited},
+	booktitle = {Proc.~2014 Conference on Innovation \& Technology in Computer Science Education},
+	year = {2014},
+	pages = {39--44},
+	keywords = {cs1, fail rates, failure rates, introductory programming, pass rates, programming, statistics},
+	doi={https://doi.org/10.1145/2591708.2591749}
+}
+
+@Article{brown-et-al-toce2014,
+	author =       {Neil C. C. Brown and Sue Sentance and Tom Crick and Simon Humphreys},
+	title =        {{Restart: The Resurgence of Computer Science in UK Schools}},
+	journal =      {{ACM Transactions on Computer Science Education}},
+	year =         {2014},
+	volume =       {14},
+	number =       {2},
+	publisher =    {ACM},
+	pages =        {1--22},
+	doi =          {https://doi.org/10.1145/2602484}
+}
+
+@InProceedings{crick-et-al:ukicer2020,
+	author =       {Tom Crick and Cathryn Knight and Richard Watermeyer and Janet Goodall},
+	title =        {{The Impact of COVID-19 and ``Emergency Remote Teaching'' on the UK Computer Science Education Community}},
+	booktitle =    {{Proc.~UK \& Ireland Computing Education Research (UKICER) Conference}},
+	year = 	 {2020},
+	doi =          {https://doi.org/10.1145/3416465.3416472}
+}
+
+@InProceedings{prickett-et-al:iticse2020,
+	author =       {Tom Prickett and Morgan Harvey and Julie Walters and Longzhi Yang and Tom Crick},
+	title =        {{Resilience and Effective Learning in First-Year Undergraduate Computer Science}},
+	booktitle =    {{Proc.~25th Annual Conference on Innovation and Technology in Computer Science Education}},
+	year = 	 {2020},
+	doi =          {https://doi.org/10.1145/3341525.3387372}
+}
+
+@InProceedings{crick-et-al:fie2020,
+	author =       {Tom Crick and James H. Davenport and Paul Hanna and Alastair Irons and Tom Prickett},
+	title =        {{Overcoming the Challenges of Teaching Cybersecurity in UK Computer Science Degree Programmes}},
+	booktitle =    {{Proc.~50th Annual Frontiers in Education Conference (FIE 2020)}},
+	year = 	 {2020},
+	publisher =    {{IEEE Press}}
+}
