@@ -21,24 +21,24 @@
 %% same distribution. (The sources need not necessarily be
 %% in the same archive or directory.)
 %%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigconf]{acmart}
 \usepackage[false]{anonymous-acm}
 \settopmatter{authorsperrow=3}
-%% NOTE that a single column version may be required for 
-%% submission and peer review. This can be done by changing
-%% the \doucmentclass[...]{acmart} in this template to 
-%% \documentclass[manuscript,screen]{acmart}
-%% 
-%% To ensure 100% compatibility, please check the white list of
-%% approved LaTeX packages to be used with the Master Article Template at
-%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
-%% before creating your document. The white list page provides 
-%% information on how to submit additional LaTeX packages for 
-%% review and adoption.
-%% Fonts used in the template cannot be substituted; margin 
-%% adjustments are not allowed.
-%%
+
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -58,7 +58,7 @@
 %% These commands are for a PROCEEDINGS abstract or paper.
 \acmConference[CEP '22]{CEP '22: ACM Computing Education Practice}{January 06, 2022}{Durham, UK}
 \acmBooktitle{CEP '22: ACM Computing Education Practice Conference,
-  January 06, 2022, Durham, UK}
+	January 06, 2022, Durham, UK}
 \acmPrice{15.00}
 \acmISBN{978-1-4503-XXXX-X/18/06}
 
@@ -86,10 +86,6 @@
 %% end of the preamble, start of the body of the document source.
 \begin{document}
 
-%%
-%% The "title" command has an optional parameter,
-%% allowing the author to define a "short title" to be used in page headers.
-%\title{National Developmental Support for Early Career Academics in the UK Computer Science Community}
 \title{Co-Constructing a Community of Practice for Early-Career Computer Science Academics in the UK}
 
 %%
@@ -98,8 +94,8 @@
 %% Of note is the shared affiliation of the first two authors, and the
 %% "authornote" and "authornotemark" commands
 
-  \author{Tom Crick}
-  \orcid{0000-0001-5196-9389}
+\author{Tom Crick}
+\orcid{0000-0001-5196-9389}
 \authornote{{\emph{N.B.}} all authors contributed equally to this paper}
 \affiliation{
 	\institution{Swansea University}
@@ -152,6 +148,7 @@
 \email{k.miller@mmu.ac.uk}
 
 \author{Tom Prickett}
+\orcid{0000-0002-9671-2250}
 \authornotemark[1]
 \affiliation{
 	\institution{ Northumbria University}
@@ -174,24 +171,23 @@
 	\institution{University of Sunderland}
 	\city{Sunderland}
 	\country{UK} }
-      \email{becky.allen@sunderland.ac.uk}
+\email{becky.allen@sunderland.ac.uk}
 
-      \author{Bhagyashree Patil}
+\author{Bhagyashree Patil}
 \authornotemark[1]
 \affiliation{
 	\institution{University of Bath}
 	\city{Bath}
 	\country{UK} }
-      \email{bp397@bath.ac.uk}
+\email{bp397@bath.ac.uk}
 
-            \author{Simon Payne}
+\author{Simon Payne}
 \authornotemark[1]
 \affiliation{
 	\institution{University of South Wales}
 	\city{Pontypridd}
 	\country{UK} }
 \email{simon.payne@southwales.ac.uk}
-
 
 %%
 %% By default, the full list of authors will be used in the page
@@ -205,24 +201,24 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-Early-career academics across all disciplines in the UK face
-significant challenges, and computer science is no exception. There
-are challenges in terms of developing an independent research career,
-delivering high quality learning and teaching, maintaining their own
-professional development, as well as wider academic service
-commitments. Tertiary education institutions in the UK often provide
-support through some combination of mentoring, coaching, and
-training. Early-career faculty often have to work towards professional
-recognition of their teaching, either by direct application or via
-successful completion of an accredited institutional taught
-postgraduate course. This paper reports on progress towards
-supplementing institutional-level support through an evolving UK-wide
-initiative, co-constructed with early-career academics, to build
-diverse and resilient communities of practice in computer
-science. Insights are provided as to how the initiative supplements
-current institutional approach and is underpinned by national-level
-academic practice developmental events, professional body engagement,
-alongside cross-institutional mentoring and buddying schemes.
+	Early-career academics across all disciplines in the UK face
+	significant challenges, and computer science is no exception. There
+	are challenges in terms of developing an independent research career,
+	delivering high quality learning and teaching, maintaining their own
+	professional development, as well as wider academic service
+	commitments. Tertiary education institutions in the UK often provide
+	support through some combination of mentoring, coaching, and
+	training. Early-career faculty often have to work towards professional
+	recognition of their teaching, either by direct application or via
+	successful completion of an accredited institutional taught
+	postgraduate course. This paper reports on progress towards
+	supplementing institutional-level support through an evolving UK-wide
+	initiative, co-constructed with early-career academics, to build
+	diverse and resilient communities of practice in computer
+	science. Insights are provided as to how the initiative supplements
+	current institutional approach and is underpinned by national-level
+	academic practice developmental events, professional body engagement,
+	alongside cross-institutional mentoring and buddying schemes.
 \end{abstract}
 
 %%
@@ -230,13 +226,13 @@ alongside cross-institutional mentoring and buddying schemes.
 %% Please copy and paste the code instead of the example below.
 %%
 \begin{CCSXML}
-<ccs2012>
-   <concept>
-       <concept_id>10003456.10003457.10003527</concept_id>
-       <concept_desc>Social and professional topics~Computing education</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
- </ccs2012>
+	<ccs2012>
+	<concept>
+	<concept_id>10003456.10003457.10003527</concept_id>
+	<concept_desc>Social and professional topics~Computing education</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	</ccs2012>
 \end{CCSXML}
 
 \ccsdesc[500]{Social and professional topics~Computing education}
@@ -246,14 +242,11 @@ alongside cross-institutional mentoring and buddying schemes.
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
 \keywords{Early-career academics, community of practice, professional
-  development, co-construction}
-
-
+	development, co-construction}
 %%
 %% This command processes the author and affiliation and title
 %% information and builds the first part of the formatted document.
 \maketitle
-
 \section{What is it?}	
 %%A short description of the practice you're presenting
 \label{sec:What}
@@ -261,10 +254,10 @@ This paper reports on the progress to date of an emerging initiative
 to support the development needs of early career academics in the
 United Kingdom. The background analysis undertaken to initiate this
 scheme and the outcomes of a related workshop at \textanon{ACM UK \&
-Ireland Computing Education Research Conference 2020
-(UKICER’20)}{BLINDED CONFERENCE NAME} to formulate a pilot course are
+	Ireland Computing Education Research Conference 2020
+	(UKICER’20)}{BLINDED CONFERENCE NAME} to formulate a pilot course are
 discussed \textanon{ a previous paper
-\cite{CricketAl2021CEP}}{[BLINDED]}. The initiative has three key
+	\cite{CricketAl2021CEP}}{[BLINDED]}. The initiative has three key
 activities: ({\emph{i}}) Developmental/training sessions;
 ({\emph{ii}}) Cross-university mentoring; and ({\emph{iii}})
 Cross-university buddying. Initially, the steering group set out with
@@ -403,7 +396,7 @@ university~\cite{Wilkins2019}. Attempting to establish a nationwide,
 cross university scheme presents a new departure. The genesis for such
 a scheme came from the early-career colleagues themselves and it has
 been configured entirely around their suggestions.
-	
+
 \section{Where does it fit?}
 %%A short description of your teaching context. You may, for instance, include a description of intake, class size, curriculum sequence; anything that's necessary for others to understand your situation. How do things work at your institution?
 
@@ -412,9 +405,9 @@ groups: {\emph{Early-career lecturers}} who have recently been ap-
 pointed to an academic post. These may have teaching and research or
 alternatively more teaching focused responsibilities. Some have joined
 from industry, others from a research background; {\emph{Aspiring
-academics}} who are typically PhD students or post-docs and are
+		academics}} who are typically PhD students or post-docs and are
 aspiring towards a full academic role; and {\emph{more
-established/senior colleagues}} who are new to UK higher education
+		established/senior colleagues}} who are new to UK higher education
 and hence are seeking help to acclimatise. There is some
 variety too in the colleagues who are supporting the initiative. All
 have had a degree of seniority either via their presence in the
@@ -437,7 +430,7 @@ attendees to join the scheme.
 
 Anonymous post-event surveys have also been used for evaluation. 11 participants completing the post
 event survey. When asked ``{\emph{Overall, was the workshop
-useful}}'', four attendees strongly agreed and seven agreed. One item
+		useful}}'', four attendees strongly agreed and seven agreed. One item
 of constructive feedback received was the session could be even more
 interactive which was taken on board for the second event.
 
@@ -505,7 +498,7 @@ practice (CEP) and the other on educational research (UKICER).
 % computing education. Whilst some early career colleagues will actively
 % engage with this speciality, all will be required to develop
 % educational capacity and effectiveness.
- 
+
 Training programmes are run by individual higher education
 providers. Additionally, in the UK, Advance HE delivers training
 programmes for academics at different stages of their
@@ -610,23 +603,11 @@ those with more experience, it gives an opportunity to better
 understand challenges early career colleagues face as well as to grow
 their professional networks and foster the emerging community of
 computing education practice in the UK.
-
-% \begin{acks}
-	
-% 	The authors would like to thank the members of the wider computing education community who have supported the initiative either be contributing to events, attending events, providing feedback, mentoring or being a mentee or a buddy.
-% 	The BCS Academy of Computing has supported the development of this paper
-	
-	
-% \end{acks}
-
-
 %%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{NewLecturer}
-
-
 
 \end{document}
 \endinput
