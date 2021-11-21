@@ -21,24 +21,24 @@
 %% same distribution. (The sources need not necessarily be
 %% in the same archive or directory.)
 %%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigconf, anonymous=false]{acmart}
 %%note: adding authors will make over 4 pages - removing arXiv from refererences %% will resolved
 \settopmatter{authorsperrow=3}
-%% NOTE that a single column version may be required for 
-%% submission and peer review. This can be done by changing
-%% the \doucmentclass[...]{acmart} in this template to 
-%% \documentclass[manuscript,screen]{acmart}
-%% 
-%% To ensure 100% compatibility, please check the white list of
-%% approved LaTeX packages to be used with the Master Article Template at
-%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
-%% before creating your document. The white list page provides 
-%% information on how to submit additional LaTeX packages for 
-%% review and adoption.
-%% Fonts used in the template cannot be substituted; margin 
-%% adjustments are not allowed.
-%%
+
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -51,14 +51,15 @@
 %% the commands and values with those provided to you when you
 %% complete the rights form.
 \setcopyright{acmcopyright}
-\copyrightyear{2022}
-\acmYear{2022}
+\copyrightyear{2018}
+\acmYear{2018}
 \acmDOI{10.1145/1122445.1122456}
 
 %% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[CEP '22]{CEP '22: ACM Computing Education Practice}{January 06, 2022}{Durham, UK}
-\acmBooktitle{CEP '22: ACM Computing Education Practice Conference,
-  January 06, 2022, Durham, UK}
+\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural
+  Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+  June 03--05, 2018, Woodstock, NY}
 \acmPrice{15.00}
 \acmISBN{978-1-4503-XXXX-X/18/06}
 
@@ -99,21 +100,23 @@
 \author{Tom Crick}
 \orcid{0000-0001-5196-9389}
 \affiliation{%
-\institution{Swansea University}
-\city{Swansea}
-\country{UK}
- }
+	\institution{Swansea University}
+	\city{Swansea}
+	\country{UK}
+}
 \email{thomas.crick@swansea.ac.uk}
 
 \author{Tom Prickett}
+\orcid{0000-0002-9671-2250}
 \affiliation{%
- \institution{Northumbria University}
- \city{Newcastle upon Tyne}
- \country{UK}
- }
+	\institution{Northumbria University}
+	\city{Newcastle upon Tyne}
+	\country{UK}
+}
 \email{tom.prickett@northumbria.ac.uk}
 
 \author{Jill Bradnum}
+\orcid{0000-0002-1688-3368}
 \affiliation{%
 	\institution{Northumbria University}
 	\city{Newcastle upon Tyne}
@@ -122,6 +125,7 @@
 \email{jill.bradnum@northumbria.ac.uk}
 
 \author{Alan Godfrey}
+\orcid{0000-0003-4049-9291}
 \affiliation{%
 	\institution{Northumbria University}
 	\city{Newcastle upon Tyne}
@@ -140,22 +144,22 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-Development projects in which small teams of learners develop
-software/digital artefacts are common features of computing-related
-degree programmes. Within these team projects, it can be problematic
-ensuring students are fairly recognised and rewarded for the
-contribution they make to the collective team effort and outputs. Peer
-assessment is a commonly used approach to promote fairness and due
-recognition. Maintaining parity within assessment processes is also a
-critical aspect of fairness. This paper presents the processes
-employed for the operation of one such team project at a UK higher
-education institution, using the Team-Q rubric and analysing the
-impact of the (self-identified) gender of learner marking and the
-learner being marked on the scores obtained. The results from this
-institutional sample (N=121) using the Team-Q metric offers evidence
-of gender parity in this context. This study also makes the case for
-continued vigilance to ensure Team-Q and other rubrics are used in a
-manner that supports gender parity in computing.
+	Development projects in which small teams of learners develop
+	software/digital artefacts are common features of computing-related
+	degree programmes. Within these team projects, it can be problematic
+	ensuring students are fairly recognised and rewarded for the
+	contribution they make to the collective team effort and outputs. Peer
+	assessment is a commonly used approach to promote fairness and due
+	recognition. Maintaining parity within assessment processes is also a
+	critical aspect of fairness. This paper presents the processes
+	employed for the operation of one such team project at a UK higher
+	education institution, using the Team-Q rubric and analysing the
+	impact of the (self-identified) gender of learner marking and the
+	learner being marked on the scores obtained. The results from this
+	institutional sample (N=121) using the Team-Q metric offers evidence
+	of gender parity in this context. This study also makes the case for
+	continued vigilance to ensure Team-Q and other rubrics are used in a
+	manner that supports gender parity in computing.
 \end{abstract}
 
 %%
@@ -163,18 +167,18 @@ manner that supports gender parity in computing.
 %% Please copy and paste the code instead of the example below.
 %%
 \begin{CCSXML}
-<ccs2012>
-   <concept>
-       <concept_id>10003456.10003457.10003527</concept_id>
-       <concept_desc>Social and professional topics~Computing education</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
-   <concept>
-       <concept_id>10003456.10003457.10003527.10003540</concept_id>
-       <concept_desc>Social and professional topics~Student assessment</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
- </ccs2012>
+	<ccs2012>
+	<concept>
+	<concept_id>10003456.10003457.10003527</concept_id>
+	<concept_desc>Social and professional topics~Computing education</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10003456.10003457.10003527.10003540</concept_id>
+	<concept_desc>Social and professional topics~Student assessment</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	</ccs2012>
 \end{CCSXML}
 
 \ccsdesc[500]{Social and professional topics~Computing education}
@@ -188,6 +192,8 @@ manner that supports gender parity in computing.
 %% This command processes the author and affiliation and title
 %% information and builds the first part of the formatted document.
 \maketitle
+
+
 \section{What is it?}	
 %%A short description of the practice you're presenting
 \label{sec:What}
@@ -262,6 +268,9 @@ learner scores each of their peers out of 56 overall. The peer
 weighting is then calculated using the algorithm indicated previously
 (with a learner's mean peer score divided by their team's mean peer
 score).
+
+
+
 \section{Why are you doing it?}
 %%What happened before? What is it changing / replacing / improving? What gap is it filling?
 It is widely recognised that Science, Technology, Engineering and
@@ -294,7 +303,6 @@ Peer assessment is the main focus of this work; however, it is
 acknowledged the data is being gathered as part of assessed tasks
 which may, in some way, influence the outcomes. Additionally, more
 details of the situated practices adopted are provided as a context.
-
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 \begin{table*}[ht]
@@ -317,40 +325,40 @@ details of the situated practices adopted are provided as a context.
 		& Number of marks awarded in each category                                                                                                              & 32 & 323 & 5                                                       & 27                                                    & 27                                                    & 296
 		\\
 		\hline
-			Contribute to team Project          & {\emph{Participates actively and accepts a fair share of the group work}}                                 &
-		 3.47 &
-		 3.49 &
-		 3.80                                                     & 3.44                                                 & 3.41                                                 & 3.49                                               \\
+		Contribute to team Project          & {\emph{Participates actively and accepts a fair share of the group work}}                                 &
+		3.47 &
+		3.49 &
+		3.80                                                     & 3.44                                                 & 3.41                                                 & 3.49                                               \\
 		\hline
 		& {\emph{Works skilfully on assigned tasks and completes them on time}}                                     &
-		 3.44 &
-		 3.37 &		 
-		 3.40                                                     & 3.19                                                 & 3.44                                                 & 3.38                                               \\
+		3.44 &
+		3.37 &		 
+		3.40                                                     & 3.19                                                 & 3.44                                                 & 3.38                                               \\
 		\hline
 		& {\emph{Gives timely, constructive feedback to team members, in the appropriate format}}                   &
-		 3.19 &
-		 3.24 &
-		 3.20                                                     & 3.26                                                 & 3.19                                                 & 3.23                                               \\
+		3.19 &
+		3.24 &
+		3.20                                                     & 3.26                                                 & 3.19                                                 & 3.23                                               \\
 		\hline
 		Facilitates contributions of others & {\emph{Communicates actively and constructively}}                                                         &
-		 3.28 &
-		 3.38 &
-		 3.60                                                     & 3.37                                                 & 3.22                                                 & 3.38                                               \\
+		3.28 &
+		3.38 &
+		3.60                                                     & 3.37                                                 & 3.22                                                 & 3.38                                               \\
 		\hline
 		& {\emph{Encourages all perspectives be considered and acknowledges contributions to others}}               &
-  	     3.41 &
-  	     3.44 &		
-		 3.80                                                     & 3.37                                                 & 3.33                                                 & 3.44                                               \\
+		3.41 &
+		3.44 &		
+		3.80                                                     & 3.37                                                 & 3.33                                                 & 3.44                                               \\
 		\hline
 		& {\emph{Constructively builds on the contributions of others and integrates own work with work of others}} &
-		 3.38 &
-		 3.36 &
-		 3.80                                                     & 3.33                                                 & 3.30                                                 & 3.37                                               \\
+		3.38 &
+		3.36 &
+		3.80                                                     & 3.33                                                 & 3.30                                                 & 3.37                                               \\
 		\hline
 		Planning and Management             & {\emph{Takes on an appropriate role in the group (e.g. leader, note take, etc)}}                          &
-		 3.31 &
-		 3.05 &
-		 4.00                                                       & 2.93                                                 & 3.19                                                 & 3.06                                               \\
+		3.31 &
+		3.05 &
+		4.00                                                       & 2.93                                                 & 3.19                                                 & 3.06                                               \\
 		\hline
 		& {\emph{Clarifies goals and plans the project}}                                                            &
 		3.22 &
@@ -365,42 +373,40 @@ details of the situated practices adopted are provided as a context.
 		Fosters a team climate              & {\emph{Ensures consistency between words, tone, facial expressions, and body language}}                   &
 		3.47 &
 		3.47 &
-		 3.60                                                     & 3.63                                                 & 3.44                                                 & 3.46                                               \\
+		3.60                                                     & 3.63                                                 & 3.44                                                 & 3.46                                               \\
 		\hline
 		& {\emph{Expresses positivity and optimism about team members and project}}                                 &
 		3.44 &
 		3.49 &
-		 3.40                                                     & 3.63                                                 & 3.33                                                 & 3.48                                               \\
+		3.40                                                     & 3.63                                                 & 3.33                                                 & 3.48                                               \\
 		\hline
 		Manages potential conflict          & {\emph{Displays appropriate assertiveness: neither dominating, submissive nor passive aggressive}}        &
 		3.34 &
 		3.42 &
-		 3.60                                                     & 3.30                                                 & 3.30                                                 & 3.43                                               \\
+		3.60                                                     & 3.30                                                 & 3.30                                                 & 3.43                                               \\
 		\hline
 		& {\emph{Contributes to appropriately healthy debate}}                                                      &
 		3.28 &
 		3.45 &
-		 3.60                                                     & 3.30                                                 & 3.22                                                 & 3.46                                               \\
+		3.60                                                     & 3.30                                                 & 3.22                                                 & 3.46                                               \\
 		
 		\hline
 		& {\emph{Responds to and manages direct/indirect conflict constructively and effectively}}                  &
 		3.44 &
 		3.46 &
-		 3.60                                                     & 3.37                                                 & 3.41                                                 & 3.46                                               \\
+		3.60                                                     & 3.37                                                 & 3.41                                                 & 3.46                                               \\
 		\hline
 	\end{tabular}
 	\label{tab:means}
 \end{table*}
+
 \section{Where does it fit?}
 %%A short description of your teaching context. You may, for instance, include a description of intake, class size, curriculum sequence; anything that's necessary for others to understand your situation. How do things work at your institution?
 The team project is run as part of the final year of an undergraduate
 Computer Science degree at a UK higher education institution. The
-study took place in the 2020-2021 academic year under the
-constraints of the COVID-19 pandemic. The course runs between January
+study took place in the 2020-2021 academic year between January
 and April over a 15-week period including a 3-week spring
-vacation. Institutional ethical approval for the study was
-obtained. Explicit written consent was obtained as part of the peer
-assessment learners were asked to indicate ``What gender do you
+vacation, under the constraints of the COVID-19 pandemic,. Institutional ethical approval for the study was obtained. Explicit written consent was obtained as part of the peer assessment learners were asked to indicate ``What gender do you
 identify as?'' as an optional free text field; additionally, they were
 specifically requested to approve their consent to be included in the
 study. Hence learners have the opportunity to not supply the
@@ -417,7 +423,7 @@ individually identifiable.
 The key aspects of the management of the projects are as
 follows:
 
-    \textbf{Team allocation:}
+\textbf{Team allocation:}
 The learners are allowed to either self-select their teams or choose
 to be assigned a team. Teams are normally comprised of five
 individuals. If learners wish to be assigned a team, these are
@@ -472,6 +478,7 @@ other electronic tools. In this delivery, peer assessment was
 administered by Microsoft Forms. Two rounds of peer assessment were
 completed, one formative and one summative. Only the summative round
 is included in the study.
+
 \section{Does it work?}	
 %%How do you know? Give some evidence of effectiveness in context
 The responses to the Team-Q rubric were analysed using a combination
@@ -479,7 +486,9 @@ of Excel and R (v4.1.0). Excel was primarily used for data storage
 and cleaning; R was used for the statistical analysis. The Team-Q Score, number of marks awarded, and means for responses to
 the different descriptions in the Team-Q rubric by the gender of the
 marked learner and by the gender of the marker pairing are shown in
-Table~\ref{tab:means} above. There is little statistical difference in the mean of Team-Q Score for the marks awarded to female (46.94) and male (47.15) leaners
+Table~\ref{tab:means} above. 
+
+There is little statistical difference in the mean of Team-Q Score for the marks awarded to female (46.94) and male (47.15) leaners
 (t-test {\emph{t}}=-0.087708, {\emph{df}}=35.438,
 {\emph{p}}=0.9306). Analysis of variance (ANOVA) suggests little
 statistical difference in the mean Team-Q Score awarded between
@@ -499,7 +508,7 @@ Peer assessment and related web-based peer assessment has been
 advocated as a mechanism for equitable assessment of contribution to
 team and team software development projects for a number of
 years~\cite{Lejk2001,Clark2005,Raban_Litchfield_2007, Gordon2010,Fagerholm,
-Britton2017,Philips21}. When peer assessment is
+	Britton2017,Philips21}. When peer assessment is
 used in a summative context, there can be bias due to affiliation with
 a group~\cite{Cestone2008}, and learners sometimes do not want to
 award a low mark to their peers (and particularly to
@@ -512,30 +521,26 @@ to assure the process exhibits gender parity.
 
 \section{What will you do next?}
 %% Will you vary this, or develop it further?
-The COVID-19 pandemic~\cite{crick-et-al:ukicer2020} may have influenced the results, so study will be repeated to determine if the results are reproducible in more typical learning conditions.  The sample size is small, including only a small number of female learners and overlooks non-binary learners hence growing the sample size may increase confidence in the results.   Learners may identify as minorities for reasons other than gender (e.g. ethnicity, neurodiversity, no family history with higher education, etc) and considering such factors is an area for future work. Statistical parity, is one thing, learner perceiving assessment to be fair is equally critical. This presents an urgent set of research work to supplement statistical investigation with qualitative data via interviews with learners to explore their view of inclusion and whether there are perceptions of micro-aggressions or bias in team activities.
+The study will be repeated in more typical learning conditions as COVID-19 pandemic~\cite{crick-et-al:ukicer2020} may have influenced the results. The sample size is small, including only a small number of female learners hence growing the sample size may increase confidence in the results. Learners may identify as minorities for many reasons (e.g. gender (including non-binary), ethnicity, neurodiversity, no family history with higher education, etc) and considering all such factors is an area for future work. Statistical parity, is one thing, learner perceiving assessment to be fair is equally critical. Learner perceptions present an urgent set of research work to supplement quantitative with qualitative data via interviews with learners to explore their view of inclusion and whether there are perceptions of micro-aggressions or bias in team activities.
 
 \section{Why are you telling us this?}
-The Team Q peer model produces a team work weighting via a marking scheme synthesised from wider research. In so doing, it presents a
-comprehensive model for what constitutes effective team working. Its usage highlights to learners a rounded model of competencies that constitute good quality team working. These are far
-from solely technical competencies. The authors contend this provision
-of a benchmark for good team working practice provides useful
-formative feedback for the learners as they complete the projects in
+The Team Q peer model produces a team work weighting via a marking scheme synthesised from wider research, and thereby it presents a
+comprehensive model for what constitutes effective team working. Its usage highlights to learners the broad set of competencies that constitute good quality team working which are not solely technical competencies. The authors contend this provision of a benchmark for good team working practice provides useful formative feedback for the learners as they complete the projects in
 their teams.
 Limitations discussed in the previous section not withstanding, it is encouraging that there was statistical evidence of gender parity within the
-peer assessment scheme adopted for this study. Arguably, Team-Q is a well-established
+peer assessment scheme in this context. Team-Q is a well-established
 rubric which explores more dimensions of team working than some of the
 more standard approaches that are embedded in existing
-tools~\cite{WebPA,BuddyCheck,SparkPlus}, which could
-easily be configured to use the Team-Q rubric or other scheme as an
-alternative to their default. Furthermore, given the low overhead of
-evaluating the statistical impact of self-identified gender upon peer assessment
-results, doing so is a practical recommendation for the occasions when
-peer assessment is employed. 
+tools~\cite{WebPA,BuddyCheck,SparkPlus} by default. Finally, given the low overhead of evaluating the statistical impact of self-identified gender upon peer assessment results, doing so is a practice recommendation.
 %%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{PeerAssessment}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+
 \end{document}
 \endinput
 %%
