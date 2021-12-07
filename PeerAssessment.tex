@@ -50,18 +50,13 @@
 %% values in them; it is your responsibility as an author to replace
 %% the commands and values with those provided to you when you
 %% complete the rights form.
-\setcopyright{acmcopyright}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{10.1145/1122445.1122456}
-
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural
-  Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
-\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-  June 03--05, 2018, Woodstock, NY}
+\copyrightyear{2022} 
+\acmYear{2022} 
+\setcopyright{acmlicensed}\acmConference[CEP 2022]{Computing Education Practice 2022}{January 6, 2022}{Durham, United Kingdom}
+\acmBooktitle{Computing Education Practice 2022 (CEP 2022), January 6, 2022, Durham, United Kingdom}
 \acmPrice{15.00}
-\acmISBN{978-1-4503-XXXX-X/18/06}
+\acmDOI{10.1145/3498343.3498346}
+\acmISBN{978-1-4503-9561-8/22/01}
 
 
 %%
@@ -197,94 +192,96 @@
 \section{What is it?}	
 %%A short description of the practice you're presenting
 \label{sec:What}
-In the UK and other jurisdictions, computing degrees regularly contain
-courses in which teams of learners develop software/digital
+In the UK and other jurisdictions, computing degrees regularly
+require teams of learners develop software/digital
 artefacts. This commonly involves the demonstration of various
-software engineering competencies, for example; analysis and design;
+software engineering competencies; for example, analysis and design;
 implementation; testing; configuration management and version control;
-team working; project management/control, etc. Such teamwork projects
-are not universally well-received or well-regarded by
+team working; project management/control,
+etc~\cite{davenport-et-al:latice2016}. Such projects are not
+universally well-received or well-regarded by
 students~\cite{Gordon2010}; however there is an employability-related
 dimension~\cite{Thomas2003, Mitchell2021} to the development of these
-competencies and they are required characteristics by professional
-bodies for degree accreditation~\cite{Crick2020}.
+competencies, as well as required characteristics for professional
+body degree accreditation~\cite{Crick2020}.
 
+\looseness=-1
 Within these team projects, all members of the teams are expected to
 contribute to the development of these software/digital
-artefacts. Contribution may be structured in some manner by
-task, by role, etc; in other projects, the teams are more
+artefacts. Contribution may be structured in some manner by task, by
+role, etc; in other projects, the teams are more
 self-managing. Commonly, there will be some expected collective
-outcomes such as a product (e.g. common look and
-feel, an integrated product, etc) or task-based (e.g. risk analysis,
-project plan, team demonstration of the product, etc).  In addition to
-the collective tasks there may be individual tasks which again could
-be product (e.g. building of sub-system X) or task-based (e.g. testing
-of the product). Assuring fair contributions from all learners to
-collective tasks can present challenges~\cite{Philips21}. One common
-approach to address this challenge is peer
-assessment~\cite{Gordon2010}. It has been reported that peer assessment: is appreciated by learner as a mechanism to hold members
-accountable and aid fairer marking; supports giving and
-receiving feedback; prompts personal reflection and improvement;
-supports supervision; informs project planning and management;
-facilitates exploring and reshaping group dynamics; improves project
-outputs; and offers a sense of safety to raise issues without
-repercussions~\cite{Mitchell2021}. Peer assessment schemes which are
-based upon peer ranking / holistic view or peer rating / category based ~\cite{Yanbin2005, Lejk2001} have
-been proposed. One common form of peer rating / category system is for learners
-to assess their peers by a given metric, calculating means for
-individual and teams, and then weighting collective marks
+outcomes such as a product (e.g. common look and feel, an integrated
+product, etc) or task-based (e.g. risk analysis, project plan, team
+demonstration of the product, etc).  In addition to the collective
+tasks there may be individual tasks which again could be product
+(e.g. building of sub-system X) or task-based (e.g. testing of the
+product). Assuring fair contributions from all learners to collective
+tasks can present challenges~\cite{Philips21}. One common approach to
+address this challenge is peer assessment~\cite{Gordon2010}. It has
+been reported that peer assessment: is appreciated by learner as a
+mechanism to hold members accountable and aid fairer marking; supports
+giving and receiving feedback; prompts personal reflection and
+improvement; supports supervision; informs project planning and
+management; facilitates exploring and reshaping group dynamics;
+improves project outputs; and offers a sense of safety to raise issues
+without repercussions~\cite{Mitchell2021}. Various peer assessment
+schemes which are based upon peer ranking, holistic view or peer
+rating, and category based~\cite{Yanbin2005, Lejk2001} have been
+proposed. One common form of peer rating/category system is for
+learners to assess their peers by a given metric, calculating means
+for individual and teams, and then weighting collective marks
 accordingly. This can be achieved by online tools such as
 WebPA~\cite{WebPA}, BuddyCheck.io~\cite{BuddyCheck}, or
 SparkPlus~\cite{SparkPlus} or via the use of online surveying
 tools. In general terms, the algorithm commonly adopted is then:
 ({\emph{i}}) each learner scores each of their peers in their team by
-a set of metrics; ({\emph{2}}) a weighting is then calculated by Mean
+a set of metrics; ({\emph{ii}}) a weighting is then calculated by Mean
 Peer Score for the learner divided by Mean Peer Score for the whole
-team; and ({\emph{3}}) the individual learner would then be awarded
+team; and ({\emph{iii}}) the individual learner would then be awarded
 the mark that team is awarded multiplied by this weighting. Such team
 projects commonly have individual assessed outcomes as well as team
 responsible assessed outcomes and it would normally only be the team
 outcomes that would be subject to the weighting.
 
+\looseness=-1
 Clearly the criteria used has a significant influence on the weighting
 and hence potentially the grade awarded to the individual
-learners. Given the number of individuals who contribute to the
-marking (i.e. all the learners) there is more potential for
-unconscious or conscious bias to influence the marking than if the
-marking was completed solely by faculty. This paper explores whether a
+learners. Given that all of the learners contribute to the marking,
+there is more potential for unconscious or conscious bias to influence
+the marking than if the marking was completed solely by faculty. This
+paper, building on recent
+work~\cite{crick-et-alassessposter:sigcse2022}, explores whether a
 validated approach -- Team Q~\cite{Britton2017} -- together with a
 situated set of practices, supports gender parity in terms of the peer
-assessment marks awarded.
+assessment marks awarded.  Team Q~\cite{Britton2017} assesses five
+components of team working: contributes to team project; facilitates
+contributions of others; planning and management; fosters a team
+climate; and manages potential conflict. Each of the components is in
+turn measures by indication of `{\emph{how often does your peer
+demonstrate the following}}' against a set of descriptions. Each
+description is awarded scores as follows: Never=0; Sometimes=1;
+Usually=2; Regularly=3; and Always=4. The full set of descriptions can
+be seen in Table~\ref{tab:means}. Hence a learner scores each of their
+peers out of 56 overall. The peer weighting is then calculated using
+the algorithm indicated previously (with a learner's mean peer score
+divided by their team's mean peer score).
 
-Team Q~\cite{Britton2017} assesses five components of team working:
-contributes to team project; facilitates contributions of others;
-planning and management; fosters a team climate; and manages potential
-conflict. Each of the components is in turn measures by indication of
-`{\emph{how often does your peer demonstrate the following}}' against
-a set of descriptions. Each description is awarded scores as follows:
-Never=0; Sometimes=1; Usually=2; Regularly=3; and Always=4. The
-full set of descriptions can be seen in Table~\ref{tab:means}. Hence a
-learner scores each of their peers out of 56 overall. The peer
-weighting is then calculated using the algorithm indicated previously
-(with a learner's mean peer score divided by their team's mean peer
-score).
-
-
-
+\vspace{-0.5em}
 \section{Why are you doing it?}
 %%What happened before? What is it changing / replacing / improving? What gap is it filling?
-It is widely recognised that Science, Technology, Engineering and
-Mathematics (STEM) (e.g.~\cite{Baird2018}) and more specifically
-computing remain male-dominated disciplines. In the UK, only 1 in 5
-Computing, Engineering and Technology students were female in the
-2019-2020 academic year~\cite{HESA}. For the computing discipline in
-the UK, 26,285 out of 105,485 (just less than 20\%) identified as
-female and 210 identified as non-binary~\cite{HESA}. Addressing this
-imbalance is critical for the disciplines involved, from a social,
-cultural and economic perspective, to maximise the potential future
-development of the discipline. This is further reinforced by the
-ambitions of the United Nations Sustainable Development Goals:
-{\emph{SDG4: Quality Education}} and {\emph{SDG5: Gender Equality}}.
+It is widely recognised that STEM~\cite{Baird2018} and more
+specifically computing remain male-dominated disciplines. In the UK,
+only 1 in 5 Computing, Engineering and Technology students were female
+in the 2019-2020 academic year~\cite{HESA}. For the computing
+discipline in the UK, 26,285 out of 105,485 (just less than 20\%)
+identified as female and 210 identified as
+non-binary~\cite{HESA}. Addressing this imbalance is critical for the
+disciplines involved, from a social, cultural and economic
+perspective, to maximise the potential future development of the
+discipline. This is further reinforced by the ambitions of the United
+Nations Sustainable Development Goals: {\emph{SDG4: Quality
+Education}} and {\emph{SDG5: Gender Equality}}.
 
 Belonging~\cite{Veilleux2013} is recognised as a crucial factor for
 retaining learners within the computing discipline, yet learners who
@@ -307,7 +304,7 @@ details of the situated practices adopted are provided as a context.
 % \usepackage{multirow}
 \begin{table*}[ht]
 	\caption{Means of Team Q Score by gender of marked learner and by gender of marker pairing (female marking female, female marking male, male marking female and male marking male)}
-	\begin{tabular} {| p{2cm} | p{7cm} | p{1cm}| p{1cm} | p{1cm}| p{1cm} |p{1cm} |p{1cm} |} 
+	\begin{tabular} {| p{1.8cm} | p{7.3cm} | p{1cm}| p{1cm} | p{1cm}| p{1cm} |p{1cm} |p{1cm} |} 
 		\hline
 		
 		& & \multicolumn{2}{c}{Marked Gender}& \multicolumn{4}{c}{Marker Gender  / Marked Gender }  \\
@@ -325,7 +322,7 @@ details of the situated practices adopted are provided as a context.
 		& Number of marks awarded in each category                                                                                                              & 32 & 323 & 5                                                       & 27                                                    & 27                                                    & 296
 		\\
 		\hline
-		Contribute to team Project          & {\emph{Participates actively and accepts a fair share of the group work}}                                 &
+		Contribute to team project          & {\emph{Participates actively and accepts a fair share of the group work}}                                 &
 		3.47 &
 		3.49 &
 		3.80                                                     & 3.44                                                 & 3.41                                                 & 3.49                                               \\
@@ -404,30 +401,32 @@ details of the situated practices adopted are provided as a context.
 %%A short description of your teaching context. You may, for instance, include a description of intake, class size, curriculum sequence; anything that's necessary for others to understand your situation. How do things work at your institution?
 The team project is run as part of the final year of an undergraduate
 Computer Science degree at a UK higher education institution. The
-study took place in the 2020-2021 academic year between January
-and April over a 15-week period including a 3-week spring
-vacation, under the constraints of the COVID-19 pandemic,. Institutional ethical approval for the study was obtained. Explicit written consent was obtained as part of the peer assessment learners were asked to indicate ``What gender do you
-identify as?'' as an optional free text field; additionally, they were
-specifically requested to approve their consent to be included in the
-study. Hence learners have the opportunity to not supply the
-information and additionally specifically consent to
-participate. Those who provided a null response have not been included
-in the study. The size of the cohort was 170. Of this group, 121
-learners are included in the study with 108 learners self-identifying
-as male (`male' or `man' or `masculine') and 13 self-identifying as
-female. A further three learners identified responded as non-binary
-(responding: `I don't know'; `non-binary'; and `nothing'); these have
-not been included in the study due to concerns that they may be
-individually identifiable.
-
-The key aspects of the management of the projects are as
-follows:
+study took place in the 2020-2021 academic year between January and
+April over a 15-week period including a 3-week spring vacation, under
+the constraints of the COVID-19 pandemic. Institutional ethical
+approval for the study was obtained. Explicit written consent was
+obtained as part of the peer assessment learners were asked to
+indicate ``What gender do you identify as?'' as an optional free text
+field; additionally, they were specifically requested to approve their
+consent to be included in the study. Hence learners have the
+opportunity to not supply the information and additionally
+specifically consent to participate. Those who provided a null
+response have not been included in the study. The size of the cohort
+was 170. Of this group, 121 learners are included in the study with
+108 learners self-identifying as male (`male' or `man' or `masculine')
+and 13 self-identifying as female. A further three learners identified
+responded as non-binary (responding: `I don't know'; `non-binary'; and
+`nothing'); these have not been included in the study due to concerns
+that they may be individually identifiable. The key aspects of the
+management of the projects are as follows:
 
 \textbf{Team allocation:}
 The learners are allowed to either self-select their teams or choose
 to be assigned a team. Teams are normally comprised of five
 individuals. If learners wish to be assigned a team, these are
-allocated randomly upon a first-come, first-served basis. In this case, three teams were allocated randomly, these were exclusively male teams.
+allocated randomly upon a first-come, first-served basis. In this
+case, three teams were allocated randomly, these were exclusively male
+teams.
 
 \textbf {Project selection:}
 All the projects are `live' development projects in the sense that
@@ -457,18 +456,24 @@ penalised.
 The teams are supported by weekly progress review meetings with a
 tutor. These follow a stand-up style with each team member asked to
 identify progress and any road blocks which can then be discussed in
-more depth. A Microsoft Word and a InVision Freehand
-template were provided to support this activity. These records were
-uploaded to the institutional virtual learning environment at the end of
+more depth. A Microsoft Word and a InVision Freehand template were
+provided to support this activity. These records were uploaded to the
+institutional virtual learning environment at the end of
 meetings. External to the meetings, the supervising tutor attempted to
-support the teams to resolve any team-related issues. One team had to be reorganised in this delivery. 
+support the teams to resolve any team-related issues; one team had to
+be reorganised in this delivery.
 
 \textbf{Assessment:}
 There are three related components of summative assessment: a project
-proposal (10\%), a digital product and related demonstration (50\%) and an individual report which critically evaluates the project and the professional, ethical, legal and social issues a finalised and deployed version of the
-produced prototype would need to mitigate. The team aspects are: 50\%
-of the proposal and 20\% of the digital product and related demonstration which are marked as a team and are weighted by peer assessment.
+proposal (10\%), a digital product and related demonstration (50\%)
+and an individual report which critically evaluates the project and
+the professional, ethical, legal and social issues a finalised and
+deployed version of the produced prototype would need to mitigate. The
+team aspects are: 50\% of the proposal and 20\% of the digital product
+and related demonstration which are marked as a team and are weighted
+by peer assessment.
 
+\looseness=-1
 \textbf{Peer Assessment:}
 The project proposal and the demonstration contain team and individual
 tasks which are peer assessed. Over various historical deliveries of the
@@ -482,14 +487,13 @@ is included in the study.
 \section{Does it work?}	
 %%How do you know? Give some evidence of effectiveness in context
 The responses to the Team-Q rubric were analysed using a combination
-of Excel and R (v4.1.0). Excel was primarily used for data storage
-and cleaning; R was used for the statistical analysis. The Team-Q Score, number of marks awarded, and means for responses to
-the different descriptions in the Team-Q rubric by the gender of the
+of Excel (data storage and cleaning) and R (statistical analysis). The
+Team-Q Score, number of marks awarded, and means for responses to the
+different descriptions in the Team-Q rubric by the gender of the
 marked learner and by the gender of the marker pairing are shown in
-Table~\ref{tab:means} above. 
-
-There is little statistical difference in the mean of Team-Q Score for the marks awarded to female (46.94) and male (47.15) leaners
-(t-test {\emph{t}}=-0.087708, {\emph{df}}=35.438,
+Table~\ref{tab:means} above. There is little statistical difference in
+the mean of Team-Q Score for the marks awarded to female (46.94) and
+male (47.15) leaners (t-test {\emph{t}}=-0.087708, {\emph{df}}=35.438,
 {\emph{p}}=0.9306). Analysis of variance (ANOVA) suggests little
 statistical difference in the mean Team-Q Score awarded between
 ``female-marking male'' (46.41), ``male-marking female'' (46.30) or
@@ -497,41 +501,67 @@ statistical difference in the mean Team-Q Score awarded between
 {\emph{p}}=0.748 and marked gender {\emph{F}}= 0.177,
 {\emph{p}}=0.674). The slightly higher female-to-female marking
 pairing mean (50.60) is not statistically significantly different to
-the other pairings (t-test {\emph{t}}=0.697,
-{\emph{p}}=0.487).  This is a
-sample size of N=121 learners on one course delivered with a low
-incidence of female learners (13) but is supportive of gender parity in terms of the gender of the learner being marked and gender of the learner completing the marking.
+the other pairings (t-test {\emph{t}}=0.697, {\emph{p}}=0.487).  This
+is a sample size of N=121 learners on one course delivered with a low
+incidence of female learners (13) but is supportive of gender parity
+in terms of the gender of the learner being marked and gender of the
+learner completing the marking.
 
 \section{Who else has done this?}
 %%Where did you get the idea from? (If from published reports, please include references). How did you find out about it? Was it easy/hard to adopt? What did you change?
 Peer assessment and related web-based peer assessment has been
 advocated as a mechanism for equitable assessment of contribution to
 team and team software development projects for a number of
-years~\cite{Lejk2001,Clark2005,Raban_Litchfield_2007, Gordon2010,Fagerholm,
-	Britton2017,Philips21}. When peer assessment is
+years~\cite{Lejk2001,Clark2005,Raban_Litchfield_2007,
+Gordon2010,Fagerholm, Britton2017,Philips21}. When peer assessment is
 used in a summative context, there can be bias due to affiliation with
 a group~\cite{Cestone2008}, and learners sometimes do not want to
-award a low mark to their peers (and particularly to
-their friends)~\cite{Sridharam2003}. Bias in peer assessment on the
-basis of gender has been widely
-reported~\cite{Heels2019,Stonewall2018}, and elsewhere bias has not
-been evidenced \cite{Tucker2014,Falchikov1997}. Performance benefits associated with diverse teams~\cite{HBR206} are reported. This mixed picture
+award a low mark to their peers (and particularly to their
+friends)~\cite{Sridharam2003}. Bias in peer assessment on the basis of
+gender has been widely reported~\cite{Heels2019,Stonewall2018}, and
+elsewhere bias has not been evidenced
+\cite{Tucker2014,Falchikov1997}. The performance benefits associated with
+diverse teams are also reported. This mixed picture
 highlights the need to validate tools employed in different contexts
 to assure the process exhibits gender parity.
 
 \section{What will you do next?}
 %% Will you vary this, or develop it further?
-The study will be repeated in more typical learning conditions as COVID-19 pandemic~\cite{crick-et-al:ukicer2020} may have influenced the results. The sample size is small, including only a small number of female learners hence growing the sample size may increase confidence in the results. Learners may identify as minorities for many reasons (e.g. gender (including non-binary), ethnicity, neurodiversity, no family history with higher education, etc) and considering all such factors is an area for future work. Statistical parity, is one thing, learner perceiving assessment to be fair is equally critical. Learner perceptions present an urgent set of research work to supplement quantitative with qualitative data via interviews with learners to explore their view of inclusion and whether there are perceptions of micro-aggressions or bias in team activities.
+The study will be repeated in more typical learning conditions as the
+COVID-19
+pandemic~\cite{crick-et-al:ukicer2020,watermeyer-et-al:he2020,crick-et-ala:iticse2021}
+may have influenced the results. The sample size is small, including
+only a small number of female learners hence growing the sample size
+may increase confidence in the results. Learners may identify as
+minorities for many reasons (e.g. gender (including non-binary),
+ethnicity, neurodiversity, no family history with higher education,
+etc) and considering all such factors is an area for future
+work. Statistical parity, is one thing, learner perceiving assessment
+to be fair is equally critical. Learner perceptions present an urgent
+set of research work to supplement quantitative with qualitative data
+via interviews with learners to explore their view of inclusion and
+whether there are perceptions of micro-aggressions or bias in team
+activities.
 
 \section{Why are you telling us this?}
-The Team Q peer model produces a team work weighting via a marking scheme synthesised from wider research, and thereby it presents a
-comprehensive model for what constitutes effective team working. Its usage highlights to learners the broad set of competencies that constitute good quality team working which are not solely technical competencies. The authors contend this provision of a benchmark for good team working practice provides useful formative feedback for the learners as they complete the projects in
-their teams.
-Limitations discussed in the previous section not withstanding, it is encouraging that there was statistical evidence of gender parity within the
-peer assessment scheme in this context. Team-Q is a well-established
-rubric which explores more dimensions of team working than some of the
-more standard approaches that are embedded in existing
-tools~\cite{WebPA,BuddyCheck,SparkPlus} by default. Finally, given the low overhead of evaluating the statistical impact of self-identified gender upon peer assessment results, doing so is a practice recommendation.
+The Team Q peer model produces a team work weighting via a marking
+scheme synthesised from wider research, and thereby it presents a
+comprehensive model for what constitutes effective team working. Its
+usage highlights to learners the broad set of competencies that
+constitute good quality team working which are not solely technical
+competencies~\cite{Thomas2003,Crick2020,prickett-et-al:iticse2020,Mitchell2021}. The
+authors contend this provision of a benchmark for good team working
+practice provides useful formative feedback for the learners as they
+complete the projects in their teams.  Limitations discussed in the
+previous section not withstanding, it is encouraging that there was
+statistical evidence of gender parity within the peer assessment
+scheme in this context. Team-Q is a well-established rubric which
+explores more dimensions of team working than some of the more
+standard approaches that are embedded in existing
+tools~\cite{WebPA,BuddyCheck,SparkPlus} by default. Finally, given the
+low overhead of evaluating the statistical impact of self-identified
+gender upon peer assessment results, doing so is a practice
+recommendation.
 %%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
